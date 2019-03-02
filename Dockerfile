@@ -138,4 +138,10 @@ RUN apt-get purge -y \
   z3 \
   zlib1g-dev
 
+RUN rm -rf \
+  ~/.stack \
+  /usr/local/bin/stack
+
+RUN rustup self uninstall
+
 WORKDIR /usr/workspace
