@@ -89,4 +89,28 @@ RUN echo "source /root/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true"
 RUN echo 'export PATH="/app/kframework/k/k-distribution/bin:$PATH"' \
   >> $HOME/.bashrc
 
+WORKDIR /app/kframework/k
+RUN rm -rf \
+  .git \
+  .gitattributes \
+  .gitignore \
+  .gitmodules \
+  .idea \
+  CHANGELOG.md \
+  Dockerfile \
+  Jenkinsfile \
+  LICENSE.md \
+  README.md \
+  debian \
+  haskell-backend \
+  java-backend \
+  kernel \
+  kore \
+  ktree \
+  llvm-backend \
+  ocaml-backend \
+  pending-documentation.md \
+  pom.xml \
+  src
+
 WORKDIR /usr/workspace
