@@ -143,6 +143,6 @@ RUN rm -rf \
   /usr/local/bin/stack
 
 RUN source $HOME/.cargo/env && \
-  rustup self uninstall
+  rustup self uninstall -y
 
 WORKDIR /usr/workspace
