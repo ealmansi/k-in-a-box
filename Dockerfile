@@ -114,29 +114,16 @@ RUN rm -rf \
   src
 
 RUN apt-get purge -y \
-  bison \
   build-essential \
   clang-6.0 \
   clang++-6.0 \
   cmake \
   curl \
-  flex \
   git \
-  libboost-test-dev \
-  libgmp-dev \
-  libjemalloc-dev \
-  libmpfr-dev \
-  libyaml-cpp-dev \
-  libz3-dev \
   llvm-6.0 \
-  m4 \
   maven \
-  opam \
-  openjdk-8-jdk \
   pkg-config \
-  python3 \
-  z3 \
-  zlib1g-dev
+  python3
 
 RUN rm -rf \
   ~/.stack \
